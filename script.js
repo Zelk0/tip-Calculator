@@ -9,41 +9,46 @@ const bills = document.querySelector('.bill-price-input');
 const people = document.querySelector('.number-of-people-input');
 const tipAmount = document.querySelector('.output-tip-amount');
 const total = document.querySelector('.output-total-amount');
+const btnTip = document.querySelectorAll('.btn');
 
 btn5.addEventListener('click', function () {
-	const bill = Number(bills.value);
 	const ppl = Number(people.value);
-	const tip5 = bill * 0.05;
+	const bill = Number(bills.value);
+	const tip5 = bill * 0.5;
 	tipAmount.textContent = (tip5 / ppl).toFixed(2);
 	total.textContent = (bill + tip5) / ppl;
 });
+
 btn10.addEventListener('click', function () {
-	const bill = Number(bills.value);
 	const ppl = Number(people.value);
-	const tip10 = bill * 0.1;
-	tipAmount.textContent = (tip10 / ppl).toFixed(2);
-	total.textContent = (bill + tip10) / ppl;
+	const bill = Number(bills.value);
+	const tip5 = bill * 0.5;
+	tipAmount.textContent = (tip5 / ppl).toFixed(2);
+	total.textContent = (bill + tip5) / ppl;
 });
+
 btn15.addEventListener('click', function () {
-	const bill = Number(bills.value);
 	const ppl = Number(people.value);
-	const tip15 = bill * 0.15;
-	tipAmount.textContent = (tip15 / ppl).toFixed(2);
-	total.textContent = (bill + tip15) / ppl;
+	const bill = Number(bills.value);
+	const tip5 = bill * 0.5;
+	tipAmount.textContent = (tip5 / ppl).toFixed(2);
+	total.textContent = (bill + tip5) / ppl;
 });
+
 btn25.addEventListener('click', function () {
-	const bill = Number(bills.value);
 	const ppl = Number(people.value);
-	const tip25 = bill * 0.25;
-	tipAmount.textContent = (tip25 / ppl).toFixed(2);
-	total.textContent = (bill + tip25) / ppl;
+	const bill = Number(bills.value);
+	const tip5 = bill * 0.5;
+	tipAmount.textContent = (tip5 / ppl).toFixed(2);
+	total.textContent = (bill + tip5) / ppl;
 });
+
 btn50.addEventListener('click', function () {
-	const bill = Number(bills.value);
 	const ppl = Number(people.value);
-	const tip50 = bill * 0.5;
-	tipAmount.textContent = (tip50 / ppl).toFixed(2);
-	total.textContent = (bill + tip50) / ppl;
+	const bill = Number(bills.value);
+	const tip5 = bill * 0.5;
+	tipAmount.textContent = (tip5 / ppl).toFixed(2);
+	total.textContent = (bill + tip5) / ppl;
 });
 
 reset.addEventListener('click', function () {
